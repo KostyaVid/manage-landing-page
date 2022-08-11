@@ -1,4 +1,4 @@
-import { motion, Variant, Variants } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import Button from '../Button/Button';
 import Container from '../Container/Container';
 import s from './Hero.module.scss';
