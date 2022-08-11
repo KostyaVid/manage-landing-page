@@ -1,0 +1,44 @@
+@import './../../../variables';
+
+.form {
+  display: flex;
+  gap: 8px;
+  position: relative;
+  input {
+    padding: 18px 14px;
+    border-radius: 32px;
+    width: 200px;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+  button {
+    display: block;
+    padding: 18px 25px;
+    border-radius: 28px;
+    background-color: $brightRed;
+    color: $veryLightGray;
+    font-weight: 700;
+    transition: all 0.2s ease;
+    &:hover {
+      background-color: rgba($brightRed, 0.6);
+    }
+  }
+}
+
+.inputNoValid {
+  color: $brightRed;
+}
+.infoValid {
+  color: $brightRed;
+  font-size: 10px;
+  font-style: italic;
+  position: absolute;
+  left: 14px;
+  bottom: -20px;
+  display: none;
+}
+
+.infoValidShow {
+  display: block;
+}

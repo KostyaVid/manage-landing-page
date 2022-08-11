@@ -1,0 +1,127 @@
+@import './../../variables';
+
+.headerFoot {
+  background: $brightRed url('./../../../public/images/bg-simplify-section-desktop.svg');
+  background-position: center bottom;
+  width: 100%;
+  padding: 70px 0;
+  @media (max-width: 992px) {
+    background-position: left top;
+  }
+}
+
+.headerFootContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 992px) {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+.title {
+  font-size: 34px;
+  color: $veryLightGray;
+  font-weight: 500;
+  max-width: 440px;
+  @media (max-width: 992px) {
+    text-align: center;
+  }
+}
+
+.footerFoot {
+  width: 100%;
+  background-color: $veryDarkBlue;
+  padding: 65px 0;
+  @media (max-width: 992px) {
+    padding-bottom: 100px;
+  }
+}
+
+.footerFootContent {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  position: relative;
+  @media (max-width: 992px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 80px;
+  @media (max-width: 992px) {
+    margin-top: 50px;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+}
+
+.linksSoc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  @media (max-width: 992px) {
+    gap: 0;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 992px) {
+  .linkSoc:hover {
+    path {
+      fill: $brightRed;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  @media (max-width: 992px) {
+    width: 100%;
+    margin-top: 60px;
+  }
+}
+
+.columnNav {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.navLink {
+  color: $darkGrayishBlue;
+  &:hover {
+    color: $brightRed;
+  }
+}
+
+.formAndRight {
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+}
+
+.rights {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  @media (max-width: 992px) {
+    right: 50%;
+    bottom: -70px;
+    transform: translateX(50%);
+    text-align: center;
+  }
+}

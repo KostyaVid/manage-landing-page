@@ -1,0 +1,25 @@
+@import './../../../variables';
+
+.review {
+  cursor: pointer;
+}
+
+.review img {
+  display: block;
+  margin: 0 auto;
+}
+
+.card {
+  margin-top: -36px;
+  padding: 65px 42px 42px 42px;
+  background-color: $veryPaleRed;
+}
+
+.card p {
+  text-align: center;
+}
+
+.name {
+  font-weight: 700;
+  text-align: center;
+}

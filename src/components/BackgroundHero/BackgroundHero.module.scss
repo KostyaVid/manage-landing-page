@@ -1,0 +1,10 @@
+.background {
+  width: 100%;
+  background-image: url('./../../../public/images//backgraound-hero.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top;
+  @media (max-width: 900px) {
+    background-size: 90%;
+  }
+}

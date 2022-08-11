@@ -1,0 +1,45 @@
+.reviews {
+  margin-top: 155px;
+  margin-bottom: 175px;
+  @media (max-width: 992px) {
+    margin-top: 80px;
+    margin-bottom: 42px;
+  }
+}
+
+.swiper {
+  margin-top: 70px;
+  @media (min-width: 993px) {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+  @media (max-width: 992px) {
+    max-width: 579px;
+  }
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  @media (max-width: 992px) {
+    font-size: 27px;
+  }
+}
+
+.slide {
+  @media (max-width: 992px) {
+    margin-bottom: 50px;
+  }
+}
+
+.button {
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 992px) {
+    margin-top: 35px;
+  }
+}
